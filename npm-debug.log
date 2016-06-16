@@ -1,0 +1,212 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'polymer-cli' ]
+2 info using npm@2.15.0
+3 info using node@v4.4.2
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'polymer-cli', null ]
+7 verbose cache add spec polymer-cli
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'polymer-cli',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'polymer-cli',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed polymer-cli@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for polymer-cli
+11 info addNameTag [ 'polymer-cli', 'latest' ]
+12 silly mapToRegistry name polymer-cli
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'polymer-cli',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'polymer-cli',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/polymer-cli
+17 verbose addNameTag registry:https://registry.npmjs.org/polymer-cli not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/polymer-cli
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 3:17:22 PM
+21 verbose request id f9f19cc999ed20ee
+22 verbose etag "4ERY1OSGKXB1JBMJMRBQPFQLL"
+23 http request GET https://registry.npmjs.org/polymer-cli
+24 http 304 https://registry.npmjs.org/polymer-cli
+25 verbose headers { date: 'Thu, 16 Jun 2016 09:47:22 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   etag: '"4ERY1OSGKXB1JBMJMRBQPFQLL"',
+25 verbose headers   age: '34',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-sin6926-SIN',
+25 verbose headers   'x-cache': 'HIT',
+25 verbose headers   'x-cache-hits': '1',
+25 verbose headers   'x-timer': 'S1466070442.643942,VS0,VE0',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 304,
+26 silly get   { date: 'Thu, 16 Jun 2016 09:47:22 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"4ERY1OSGKXB1JBMJMRBQPFQLL"',
+26 silly get     age: '34',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-sin6926-SIN',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '1',
+26 silly get     'x-timer': 'S1466070442.643942,VS0,VE0',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose etag https://registry.npmjs.org/polymer-cli from cache
+28 verbose get saving polymer-cli to /Users/F22/.npm/registry.npmjs.org/polymer-cli/.cache.json
+29 verbose correctMkdir /Users/F22/.npm correctMkdir not in flight; initializing
+30 silly addNameTag next cb for polymer-cli with tag latest
+31 silly addNamed polymer-cli@0.11.1
+32 verbose addNamed "0.11.1" is a plain semver version for polymer-cli
+33 silly cache afterAdd polymer-cli@0.11.1
+34 verbose afterAdd /Users/F22/.npm/polymer-cli/0.11.1/package/package.json not in flight; writing
+35 verbose correctMkdir /Users/F22/.npm correctMkdir not in flight; initializing
+36 verbose afterAdd /Users/F22/.npm/polymer-cli/0.11.1/package/package.json written
+37 silly install resolved [ { name: 'polymer-cli',
+37 silly install resolved     version: '0.11.1',
+37 silly install resolved     description: 'A commandline tool for Polymer projects',
+37 silly install resolved     main: 'lib/polymer-cli.js',
+37 silly install resolved     engines: { node: '>=4.0' },
+37 silly install resolved     bin: { polymer: 'bin/polymer.js' },
+37 silly install resolved     scripts:
+37 silly install resolved      { lint: 'gulp lint',
+37 silly install resolved        init: 'gulp init',
+37 silly install resolved        build: 'gulp build',
+37 silly install resolved        test: 'gulp test',
+37 silly install resolved        prepublish: 'gulp build-all && gulp test' },
+37 silly install resolved     repository:
+37 silly install resolved      { type: 'git',
+37 silly install resolved        url: 'git+https://github.com/Polymer/polymer-cli.git' },
+37 silly install resolved     author: { name: 'The Polymer Project Authors' },
+37 silly install resolved     license: 'BSD-3-Clause',
+37 silly install resolved     dependencies:
+37 silly install resolved      { chalk: '^1.1.3',
+37 silly install resolved        clone: '^1.0.2',
+37 silly install resolved        'command-line-args': '^2.1.6',
+37 silly install resolved        'command-line-commands': '^0.1.2',
+37 silly install resolved        'css-slam': '^1.1.0',
+37 silly install resolved        dom5: '^1.3.1',
+37 silly install resolved        findup: '^0.1.5',
+37 silly install resolved        'fs-extra': '^0.30.0',
+37 silly install resolved        github: '^0.2.4',
+37 silly install resolved        gulp: '^3.9.1',
+37 silly install resolved        'gulp-html-minifier': '^0.1.8',
+37 silly install resolved        'gulp-if': '^2.0.0',
+37 silly install resolved        'gunzip-maybe': '^1.3.1',
+37 silly install resolved        hydrolysis: '^1.23.3',
+37 silly install resolved        inquirer: '^1.0.2',
+37 silly install resolved        liftoff: '^2.2.1',
+37 silly install resolved        'merge-stream': '^1.0.0',
+37 silly install resolved        'minimatch-all': '^1.0.2',
+37 silly install resolved        multipipe: '^0.3.0',
+37 silly install resolved        plylog: '^0.4.0',
+37 silly install resolved        polylint: '^2.10.0',
+37 silly install resolved        polyserve: '^0.12.0',
+37 silly install resolved        request: '^2.72.0',
+37 silly install resolved        resolve: '^1.1.7',
+37 silly install resolved        'sw-precache': '^3.1.1',
+37 silly install resolved        'tar-fs': '^1.12.0',
+37 silly install resolved        temp: '^0.8.3',
+37 silly install resolved        through2: '^2.0.1',
+37 silly install resolved        'uglify-js': '^2.6.2',
+37 silly install resolved        vinyl: '^1.1.1',
+37 silly install resolved        'vinyl-fs': '^2.4.3',
+37 silly install resolved        vulcanize: '^1.14.8',
+37 silly install resolved        'web-component-tester': '^4.2.0',
+37 silly install resolved        'yeoman-environment': '^1.5.2',
+37 silly install resolved        'yeoman-generator': '^0.23.3' },
+37 silly install resolved     devDependencies:
+37 silly install resolved      { chai: '^3.5.0',
+37 silly install resolved        depcheck: '^0.6.3',
+37 silly install resolved        'gulp-eslint': '^2.0.0',
+37 silly install resolved        'gulp-mocha': '^2.2.0',
+37 silly install resolved        'gulp-tslint': '^5.0.0',
+37 silly install resolved        'gulp-typescript': '^2.13.4',
+37 silly install resolved        'gulp-typings': '^1.3.6',
+37 silly install resolved        'run-sequence': '^1.2.0',
+37 silly install resolved        sinon: '^1.17.4',
+37 silly install resolved        tslint: '^3.10.2',
+37 silly install resolved        'vinyl-fs-fake': '^1.1.0',
+37 silly install resolved        'yeoman-assert': '^2.2.1',
+37 silly install resolved        'yeoman-test': '^1.1.0' },
+37 silly install resolved     gitHead: '3503a52e0ccfe60d2b58d2069ebcfd4bceda55bd',
+37 silly install resolved     bugs: { url: 'https://github.com/Polymer/polymer-cli/issues' },
+37 silly install resolved     homepage: 'https://github.com/Polymer/polymer-cli#readme',
+37 silly install resolved     _id: 'polymer-cli@0.11.1',
+37 silly install resolved     _shasum: '8397e14378dce8678ced0caddefd50543d67afd7',
+37 silly install resolved     _from: 'polymer-cli@latest',
+37 silly install resolved     _npmVersion: '3.8.3',
+37 silly install resolved     _nodeVersion: '5.10.1',
+37 silly install resolved     _npmUser: { name: 'polymer', email: 'admin@polymer-project.org' },
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: '8397e14378dce8678ced0caddefd50543d67afd7',
+37 silly install resolved        tarball: 'https://registry.npmjs.org/polymer-cli/-/polymer-cli-0.11.1.tgz' },
+37 silly install resolved     maintainers: [ [Object], [Object] ],
+37 silly install resolved     _npmOperationalInternal:
+37 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+37 silly install resolved        tmp: 'tmp/polymer-cli-0.11.1.tgz_1464920372527_0.17221063654869795' },
+37 silly install resolved     directories: {},
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/polymer-cli/-/polymer-cli-0.11.1.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install polymer-cli@0.11.1 into /usr/local/lib
+39 info installOne polymer-cli@0.11.1
+40 verbose installOne of polymer-cli to /usr/local/lib not in flight; installing
+41 verbose correctMkdir /Users/F22/.npm/_locks correctMkdir not in flight; initializing
+42 verbose lock using /Users/F22/.npm/_locks/polymer-cli-e8248b3129cc6a2b.lock for /usr/local/lib/node_modules/polymer-cli
+43 silly install write writing polymer-cli 0.11.1 to /usr/local/lib/node_modules/polymer-cli
+44 verbose unbuild lib/node_modules/polymer-cli
+45 silly gentlyRm /usr/local/lib/node_modules/polymer-cli is being purged from base /usr/local
+46 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/polymer-cli
+47 verbose tar unpack /Users/F22/.npm/polymer-cli/0.11.1/package.tgz
+48 verbose tar unpacking to /usr/local/lib/node_modules/polymer-cli
+49 silly gentlyRm /usr/local/lib/node_modules/polymer-cli is being purged
+50 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/polymer-cli
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 error tar.unpack untar error /Users/F22/.npm/polymer-cli/0.11.1/package.tgz
+53 verbose unlock done using /Users/F22/.npm/_locks/polymer-cli-e8248b3129cc6a2b.lock for /usr/local/lib/node_modules/polymer-cli
+54 verbose fstream_path /usr/local/lib/node_modules/polymer-cli
+55 verbose fstream_type Directory
+56 verbose fstream_class DirWriter
+57 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/polymer-cli'
+57 verbose stack     at Error (native)
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+58 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+59 verbose cwd /Users/F22/workspace/polymer
+60 error Darwin 15.5.0
+61 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "polymer-cli"
+62 error node v4.4.2
+63 error npm  v2.15.0
+64 error path /usr/local/lib/node_modules/polymer-cli
+65 error code EACCES
+66 error errno -13
+67 error syscall mkdir
+68 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/polymer-cli'
+68 error     at Error (native)
+68 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/polymer-cli']
+68 error   errno: -13,
+68 error   code: 'EACCES',
+68 error   syscall: 'mkdir',
+68 error   path: '/usr/local/lib/node_modules/polymer-cli',
+68 error   fstream_type: 'Directory',
+68 error   fstream_path: '/usr/local/lib/node_modules/polymer-cli',
+68 error   fstream_class: 'DirWriter',
+68 error   fstream_stack:
+68 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+68 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+68 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+69 error Please try running this command again as root/Administrator.
+70 verbose exit [ -13, true ]
+71 verbose unbuild lib/node_modules/polymer-cli
+72 silly gentlyRm /usr/local/lib/node_modules/polymer-cli is being purged from base /usr/local
+73 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/polymer-cli
