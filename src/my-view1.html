@@ -9,50 +9,87 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../bower_components/iron-autogrow-textarea/iron-autogrow-textarea.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/iron-label/iron-label.html">
+<link rel="import" href="../bower_components/paper-tags-input/paper-tags-input.html">
 
 <dom-module id="my-view1">
 
-  <template>
+<template>
+  <style >
+    :host {
+      display: block;
+      padding: 16px;
+    }
+    .imagesize{
+      padding: 30px 0px;
+      }
+      .imagetitle{
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .submit{
+        padding-top:20px;
+      }
+      paper-button.fancy {
+      background: green;
+      color: yellow;
+      border-radius: 19px;
+      width: 100%;
+      }
+      paper-button.fancy:hover {
+       background: black;
+      }
+      .inputbox{
+        width:35%;
+        border-radius: 4px;
+        border:1px solid black;
+        padding:5px;
+      }
+      iron-autogrow-textarea{
+        width: 100%;
+      }
+    }
+  </style>
+  <h2>Add New Preset</h2>
+  <paper-card>
+    <div class="card-content">
+      <h4> PRESET TYPE </h4>
+      <paper-dropdown-menu label="Article">
+        <paper-listbox class="dropdown-content">
+          <paper-item>Croissant</paper-item>
+          <paper-item>Donut</paper-item>
+          <paper-item>Financier</paper-item>
+          <paper-item>Madeleine</paper-item>
+        </paper-listbox>
+      </paper-dropdown-menu>
 
-    <style>
-      :host {
-        display: block;
-        padding: 10px;
-      }
-      .card {
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-        padding: 16px;
-        margin: 24px;
-        border-radius: 5px;
-        background-color: #fff;
-        color: #757575;
-      }
-      .circle {
-        display: inline-block;
-        height: 64px;
-        width: 64px;
-        border-radius: 50%;
-        background: #ddd;
-        line-height: 64px;
-        font-size: 30px;
-        color: #555;
-        text-align: center;
-      }
-      h1 {
-        font-size: 22px;
-        margin: 16px 0;
-        color: #212121;
-      }
-    </style>
+      <div class="title">
+        <paper-input label="TITLE" char-counter maxlength="10"></paper-input>
+      </div>
 
-    <div class="card">
-      <div class="circle">1</div>
-      <h1>View One</h1>
-      <p>Ut labores minimum atomorum pro. Laudem tibique ut has.
-      <p>Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Cu mei vide viris gloriatur, at populo eripuit sit.</p>
+      <div class="imagesize">
+        <div class="imagetitle">IMAGE SIZE eg. 600 x 300 </div>
+
+          <b>1X</b> <input class="inputbox" placeholder="Width"> X <input class="inputbox" placeholder="Height"><br><br>
+          <b>2X</b> <input class="inputbox" placeholder="Width"> X <input class="inputbox" placeholder="Height"><br><br>
+          <b>3X</b> <input class="inputbox"placeholder="Width"> X <input class="inputbox" placeholder="Height"><br><br>
+        </div>
+
+        <paper-tags-input empty-error-message="Tag could not be empty" duplicate-error-message="Tag could not be duplicate"></paper-tags-input>
+
+      <div class="submit">
+        <paper-button  class="fancy" raised>raised</paper-button>
+      </div>
     </div>
-
-  </template>
+  </paper-card>
+</template>
 
   <script>
 
